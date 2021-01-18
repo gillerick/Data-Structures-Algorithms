@@ -19,7 +19,7 @@ C = []
 n = int(input())
 for i in range(n):
     # try:
-    command = input().split()
+    command = list(input().split())
 
     C.append(command)
 for c in C:
@@ -36,6 +36,8 @@ for c in C:
         A.pop(int(c[1]))
     elif "append" in c:
         A.append(c[1])
+    elif "remove" in c:
+        A.remove(c[1])
 
 
 """

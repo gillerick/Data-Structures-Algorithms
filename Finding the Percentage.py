@@ -19,4 +19,17 @@ if __name__ == "__main__":
     query = input("Enter the student name to query average:\n")
     print((results_dict[query][0] + results_dict[query][1] + results_dict[query][2])/3)
 
+    
+    """
+    Alternative solution
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    print((student_marks[query_name][0] + student_marks[query_name][1] + student_marks[query_name][2])/3)
+    
+    """
 
