@@ -1,13 +1,13 @@
 def merge_the_tools(string, k):
-    memo = {}
     arr = [*(n for n in range(0, len(string)) if n % k == 0), len(string)]
     for i in range(len(arr)):
         try:
-            tool = [str(string[arr[i]:arr[i+1]])]
-            for j, k in zip(tool, range(1, len(tool))):
-                if j == tool[k+1]:
-                    tool.remove(j)
-                print(tool)
+            new_tool = ""
+            tool = str(string[arr[i]:arr[i+1]])
+            for c in tool:
+                if c not in new_tool:
+                    new_tool += c
+            print(new_tool)
         except IndexError:
             pass
 
