@@ -11,34 +11,19 @@ A player gets +1 point for each occurrence of the substring in the string .
 
 """
 
-
-def minion_game(string):
-    if staurt(string) > kevin(string):
-        print(f"Staurt {staurt(string)}")
+st = input()
+vowels = ["A", "E", "I", "O", "U"]
+scores = [0, 0]
+l = len(st)
+for i in range(0, l):
+    words = l - i
+    if st[i] in vowels:
+        scores[1] += words
     else:
-        print(f"Kevin {kevin(string)}")
-
-
-def staurt(s):
-    score = 0
-    for c in s:
-        count = 0
-        if c != "a" or c != "e" or c != "i" or c != "o" or c != "u":
-            count += s.count(c, s.index(c), len(s))
-            score += count
-    return score
-
-
-def kevin(s):
-    score = 0
-    for c in s:
-        count = 0
-        if c == "a" or c == "e" or c == "i" or c == "o" or c == "u":
-            count += s.count(c, s.index(c), len(s))
-            score += count
-    return score
-
-
-if __name__ == '__main__':
-    s = input()
-    minion_game(s)
+        scores[0] += words
+if scores[0] > scores[1]:
+    print("Stuart", scores[0])
+elif scores[0] < scores[1]:
+    print("Kevin", scores[1])
+else:
+    print("Draw")
