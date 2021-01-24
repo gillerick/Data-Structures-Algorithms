@@ -13,4 +13,6 @@ def solution(A):
         # print("Max", maximum)
         for i in range(1, len(C)):
             if C[i] > maximum:
+                maximum = C[i]
+        print(maximum)
 
