@@ -3,7 +3,7 @@ from functools import reduce
 
 
 def product(fracs):
-    t = reduce(lambda n, d: Fraction(n*n, d*d), [fracs[i] for i in range(len(fracs))])
+    t = reduce(lambda x,y: x*y, fracs)
     return t._numerator, t._denominator
 
 
