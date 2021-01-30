@@ -3,8 +3,8 @@ from functools import reduce
 
 
 def product(fracs):
-    t = reduce(lambda x,y: x*y, fracs)
-    return t._numerator, t._denominator
+    t = reduce(lambda x, y: x*y, fracs)
+    return t.numerator, t.denominator
 
 
 if __name__ == '__main__':

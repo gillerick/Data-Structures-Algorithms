@@ -4,6 +4,7 @@ def swap_case(s):
     for word in T:
         for c in word:
             if c.islower():
+                c.swapcase()
                 C.append(c.upper())
             else:
                 C.append(c.lower())

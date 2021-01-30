@@ -5,4 +5,4 @@ By extension, this implied that the GCD of x and y is y mod x"""
 def gcd(x, y):
     return x if y == 0 else gcd(y, x % y)
 
-print(gcd(12, 4))
+print(gcd(12, 44))
