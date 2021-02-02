@@ -8,7 +8,8 @@ for i in range(len(record)):
     temp[i] = record[i][k]
 
 sorted_temp = dict(sorted(temp.items(), key=lambda item: item[1]))
-
-print(record)
-print(temp)
+for k, v in sorted_temp.items():
+    print(record[k])
+# print(record)
+# print(temp)
 print(sorted_temp)
