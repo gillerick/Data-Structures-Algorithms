@@ -1,5 +1,7 @@
+from typing import List
+
 rows, columns = input().split()
-record = []
+record: List[List[int]] = []
 temp = {}
 for r in range(0, int(rows)):
     record.append(list(map(int, input().split())))
@@ -9,7 +11,5 @@ for i in range(len(record)):
 
 sorted_temp = dict(sorted(temp.items(), key=lambda item: item[1]))
 for k, v in sorted_temp.items():
-    print(record[k])
-# print(record)
-# print(temp)
-print(sorted_temp)
+    # Print individual array elements
+    print(*record[k])
