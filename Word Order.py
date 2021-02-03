@@ -18,10 +18,22 @@ Output  lines.
 On the first line, output the number of distinct words from the input.
 On the second line, output the number of occurrences for each distinct word according to their appearance in the input.
 """
-words = []
-n = int(input())
-for i in range(n):
-    word = input()
-    words.append(word)
-    for w in words:
-        pass
+
+def word_order():
+    words = []
+    temp = {}
+    n = int(input())
+    for i in range(n):
+        words.append(input())
+    for word in words:
+        temp[word] = 0
+    # print(temp)
+    for word in words:
+        temp[word] += 1
+
+    unique_count = len(temp)
+    print(unique_count)
+    for v in temp.values():
+        print(v, end=" ")
+
+word_order()
