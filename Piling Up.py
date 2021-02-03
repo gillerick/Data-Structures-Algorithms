@@ -20,7 +20,6 @@ def pile():
     print(numbers)
 
     for m in range(len(numbers)):
-    #     for j, k in zip(range(0, len(numbers[m])//2), range(-1, -(len(numbers[m])//2), -1)):
         if numbers[m][0] < numbers[m][-1]:
             print("No")
             continue
