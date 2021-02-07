@@ -1,0 +1,8 @@
+GET http://bikozulu.co.ke/wp-json/wp/v2/posts
+Accept: application/json
+
+###
+HEAD http://reqres.in/api/users
+Accept: application/json
+
+###

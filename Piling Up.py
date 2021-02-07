@@ -17,15 +17,16 @@ def pile():
         sides = input()
         m = list(map(int, input().split()))
         numbers.append(m)
-    print(numbers)
+    # print(numbers)
 
-    for m in range(len(numbers)):
-        if numbers[m][0] < numbers[m][-1]:
+
+def checker():
+    for n in range(len(numbers)):
+        if numbers[n][0] < numbers[n][-1]:
             print("No")
-            continue
         else:
-            del numbers[m][0]
-            del numbers[m][-1]
-            print("Yes")
+            del numbers[n][0]
+            del numbers[n][-1]
+    print("Yes")
 
 print(pile())

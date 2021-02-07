@@ -6,8 +6,7 @@ def combine(arr):
 
 count = 0
 e, o = input().split()
-even = []
-odd = []
+even, odd = [], []
 for i in range(2, int(e)*2+1, 2):
     even.append(i)
 
