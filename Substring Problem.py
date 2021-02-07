@@ -1,21 +1,15 @@
-def find_sub(string, substring):
+def find_infString(string, infString):
     l1 = len(string)
-    l2 = len(substring)
+    l2 = len(infString)
 
-    if substring == [] and string == []:
+    if l2 % l1 != 0:
+        return False
+    if l2 == l1 and string == infString:
         return True
-    if l2 == l1 and string == substring:
-        return True
-    # if l2 < l1 and string[:l2] == substring:
-    #     return True
-
     for i in range(l1, l2):
-        if str(substring).index(str(string)) == 0:
-            substring = substring[:l1]
-            if find_sub(string, substring):
-                return True
-
-    return False
+        if infString[l1:] != string:
+            return False
+        return True
 
 
-print(find_sub('abcd', 'abcdabcdabu'))
+print(find_infString("abcd", "abcdth"))
