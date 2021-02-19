@@ -1,3 +1,10 @@
+"""
+There is a given array of integers. Start with some value x, and add each of the array elements to it consecutively.
+That is, calculate a running sum of x plus each of the array elements. Determine the minimum value of x such that the
+running sum is always at least 1 even at the outset. The value of x can never be less than 1.
+
+"""
+
 def minStart(arr):
     min_start = 0
     cache = {}
