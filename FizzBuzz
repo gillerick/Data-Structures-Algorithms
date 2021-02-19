@@ -12,6 +12,7 @@ def fizzBuzz(n):
             print(i)
         i += 1
 
+
 if __name__ == '__main__':
     n = int(input().strip())
 
