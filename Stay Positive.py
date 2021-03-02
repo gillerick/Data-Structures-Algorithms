@@ -5,6 +5,7 @@ running sum is always at least 1 even at the outset. The value of x can never be
 
 """
 
+
 def minStart(arr):
     min_start = 0
     cache = {}
