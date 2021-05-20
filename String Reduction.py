@@ -4,7 +4,6 @@ Given a string, reduce it in such a way that all of its substrings are distinct.
 
 """
 
-
 def get_min_deletions(string):
     """Reasoning:
         Identify the redundant characters in the string parameter
