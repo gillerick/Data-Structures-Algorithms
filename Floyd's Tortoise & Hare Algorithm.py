@@ -14,4 +14,5 @@ def findDuplicate(nums):
         ptr2 = nums[ptr2]
     return ptr2
 
+
 print(findDuplicate([1, 2, 2, 4, 6, 7]))

@@ -1,6 +1,7 @@
 store = {'a': 4, 'e': 3, 'i': '!', 'o': 'ooo', 'O': '000', 'u': '|_|'}
 
 
+# Main function
 def vowel_swapper(string: str):
     string = change_to_lower(string)
     for vowel, replacement in store.items():

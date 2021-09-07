@@ -19,6 +19,7 @@ On the first line, output the number of distinct words from the input.
 On the second line, output the number of occurrences for each distinct word according to their appearance in the input.
 """
 
+
 def word_order():
     words = []
     temp = {}
@@ -27,7 +28,6 @@ def word_order():
         words.append(input())
     for word in words:
         temp[word] = 0
-    # print(temp)
     for word in words:
         temp[word] += 1
 
@@ -36,4 +36,6 @@ def word_order():
     for v in temp.values():
         print(v, end=" ")
 
-word_order()
+
+if __name__ == "__main__":
+    print(word_order())
