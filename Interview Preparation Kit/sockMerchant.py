@@ -13,5 +13,5 @@ def sockMerchant(n, ar):
 if __name__ == '__main__':
     n = int(input().strip())
 
-    ar = list(map(int, input().rstrip().split()))
+    ar = list(map(int, input().rstrip().split()))[:n]
     print(sockMerchant(n, ar))
