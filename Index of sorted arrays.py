@@ -24,5 +24,28 @@ def reduced_array():
 
 # Output the variable to STDOUT
 
-if __name__ =="main_":
-    print(reduced_array())
+
+numbers = [45, 56, 34, 48][0:3]
+# start:stop (exclusive)
+# print(numbers[0:3])
+# print(numbers[:3])
+# print("\n")
+# print(numbers[1:4])
+# print(numbers[1:])
+#
+# print(numbers)
+
+
+array = list(map(int, input().split(' ')))
+# n = input().split(' ')
+# n_map = map(int, n)
+# print(n_map)
+# print(type(n_map))
+
+# first = n[0]
+# print(first)
+# print(type(first))
+# Type casting
+first = array[0]
+print(array)
+print(type(first))

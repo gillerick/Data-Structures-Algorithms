@@ -22,6 +22,14 @@ def reduced_form():
 if __name__ == "__main__":
     print(reduced_form())
 
+
+numbers = [1, 2, 3, 6, 8, 9, 6, 67, 34]
+
+
+
+
+
+
 # founders = {'Apple': 'Steve Jobs', 'Microsoft': 'Bill Gates'}
 # founders['Oracle'] = 'Larry Ellison'
 # print(founders)
