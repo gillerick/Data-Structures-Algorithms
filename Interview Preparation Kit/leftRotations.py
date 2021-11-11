@@ -1,7 +1,7 @@
 def left_rotate(a, d):
     len_arr = len(a)
 
-    if d > len_arr:
+    while d > len_arr:
         d -= len_arr
 
     first = list(map(str, a[d:]))
