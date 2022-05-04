@@ -1,6 +1,7 @@
 from itertools import combinations
 
-def ABC(arr):
+
+def abc(arr):
     C = []
     for num in range(len(arr) + 1):
         c_object = combinations(arr, num)
@@ -8,4 +9,6 @@ def ABC(arr):
         C += c_list
     return print(C)
 
-ABC([3, 5, 6])
+
+if __name__ == "__main__":
+    print(abc([3, 5, 6]))

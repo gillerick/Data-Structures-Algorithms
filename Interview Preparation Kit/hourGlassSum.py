@@ -1,8 +1,8 @@
-def hour_glass_sum(m):
-    best = sum(m[0][0:3]) + m[1][1] + sum(m[2][0:3])
+def hour_glass_sum(arr):
+    best = sum(arr[0][0:3]) + arr[1][1] + sum(arr[2][0:3])
     for i in range(4):
         for j in range(4):
-            s = sum_glass(m, i, j)
+            s = sum_glass(arr, i, j)
             if s > best:
                 best = s
     return best

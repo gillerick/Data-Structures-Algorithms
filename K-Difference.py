@@ -3,7 +3,8 @@ Given an array of distinct integers and a target value, determine the number of 
 
 """
 
-def kDifference(arr):
+
+def k_difference(arr):
     C = []
     for i in range(1, len(arr)):
         try:
@@ -13,4 +14,5 @@ def kDifference(arr):
     print(C)
 
 
-kDifference([2, 4, 5, 8])
+if __name__ == "__main__":
+    print(k_difference([2, 4, 5, 8]))
